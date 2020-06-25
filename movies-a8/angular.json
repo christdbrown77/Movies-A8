@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "movies-a8"
+    }
+  },
+  "defaultProject": "movies-a8",
+  "cli": {
+    "analytics": "2d194bce-7a3e-4c93-b9e0-f1b66e62555c"
+  }
 }
