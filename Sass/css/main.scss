@@ -1,53 +1,23 @@
+@import 'section2';
+@import 'mixins';
+
 // Maps
-$colors: (primary: blue,
+$colors: (
+    primary: blue,
     secondary: black,
     primary-font-color: white,
-    secondary-font-color: red);
-
-// Variables
-$xLarge: 1200px;
-$large: 992px;
-$medium: 768px;
-$small: 576px;
-
-// Mixins
-@mixin small {
-    @media (min-width: #{$small}) {
-        @content;
-    }
-};
-
-@mixin medium {
-    @media (min-width: #{$medium}) {
-        @content;
-    }
-};
-
-@mixin large {
-    @media (min-width: #{$large}) {
-        @content;
-    }
-};
-
-@mixin xLarge {
-    @media (min-width: #{$xLarge}) {
-        @content;
-    }
-};
+    secondary-font-color: red
+);
 
 // Functions
 @function colors($color-name) {
     @return map-get($colors, $color-name)
-}
-
-;
-
-
+};
 
 body {
 
     padding: 1em;
-    color: color(primary-font-color);
+    color: colors(primary-font-color);
 
     @include small {
         background-color: purple;
@@ -55,7 +25,6 @@ body {
 
     @include medium {
         background-color: orange;
-
     }
 
     @include large {
@@ -63,6 +32,10 @@ body {
     }
 
     @include xLarge {
-        background-color: green;
+        background-color: lightcoral;
     }
 }
+
+
+
+

@@ -1,0 +1,23 @@
+@import 'mixins';
+
+#one {
+    padding: 1em;
+    border: solid;
+    margin: 10px;
+    background-color: blue;
+
+    @include xLarge {
+        background-color: darkgray;
+    }
+}
+
+#two {
+    padding: 1em;
+    border: solid;
+    margin: 10px;
+    background-color: red;
+}
+
+h1 {
+    color: black;
+}

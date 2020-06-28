@@ -1,0 +1,30 @@
+// Variables
+$xLarge: 1200px;
+$large: 992px;
+$medium: 768px;
+$small: 576px;
+
+// Mixins
+@mixin small {
+    @media (max-width: #{$medium}) {
+        @content;
+    }
+};
+
+@mixin medium {
+    @media (min-width: #{$medium}) and (max-width: #{$large}) {
+        @content;
+    }
+};
+
+@mixin large {
+    @media (min-width: #{$large}) and (max-width: #{$xLarge}) {
+        @content;
+    }
+};
+
+@mixin xLarge {
+    @media (min-width: #{$xLarge}) {
+        @content;
+    }
+};
