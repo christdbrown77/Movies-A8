@@ -4,10 +4,22 @@
     padding: 1em;
     border: solid;
     margin: 10px;
-    background-color: blue;
+    color: black;
 
     @include xLarge {
-        background-color: darkgray;
+        background-color: white;
+    }
+
+    @include large {
+        background-color: red;
+    }
+
+    @include medium {
+        background-color: white;
+    }
+
+    @include small {
+        background-color: red;
     }
 }
 
@@ -15,7 +27,24 @@
     padding: 1em;
     border: solid;
     margin: 10px;
-    background-color: red;
+    color: black;
+    width: 50%;
+
+    @include xLarge {
+        background-color: red;
+    }
+
+    @include large {
+        background-color: white;
+    }
+
+    @include medium {
+        background-color: red;
+    }
+
+    @include small {
+        background-color: white;
+    }
 }
 
 h1 {
